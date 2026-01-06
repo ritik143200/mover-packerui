@@ -1,0 +1,78 @@
+/* Page heading */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table main style */
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Table hover */
+table:hover {
+  transform: scale(1.01);
+}
+
+/* Table headers */
+th {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Table data */
+td {
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Row hover effect */
+tr:hover {
+  background-color: #f1f7ff;
+  transition: background-color 0.3s ease;
+}
+
+/* Status text */
+font[color='blue'] {
+  font-weight: bold;
+}
+
+/* Action buttons hover */
+font {
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+font:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+/* Delete hover */
+font[color='red']:hover {
+  color: darkred;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+  th, td {
+    padding: 8px;
+  }
+}

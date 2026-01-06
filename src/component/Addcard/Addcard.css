@@ -1,0 +1,89 @@
+
+/* Main container */
+/* .content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+} */
+
+/* Form box */
+/* form {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+} */
+
+/* Output text */
+/* form font {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    color: green;
+    font-weight: bold;
+} */
+
+/* Labels */
+/* label,
+lable {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+} */
+
+/* Inputs & Select */
+/* input[type="text"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+} */
+
+/* File input */
+/* input[type="file"] {
+    padding: 5px;
+} */
+
+/* Button */
+/* button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+} */
+/* 
+button:hover {
+    background: #5a67d8;
+} */
+
+/* Responsive */
+/* @media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+} */

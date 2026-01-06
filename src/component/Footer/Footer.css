@@ -1,0 +1,118 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+} */
+
+.footer {
+  background: linear-gradient(135deg, #c5a5af, #052879);
+  color: #e5e7eb;
+  padding: 60px 40px 20px;
+  position: relative;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Brand */
+.brand img {
+  width: 70px;
+  transition: 0.4s;
+}
+
+.brand img:hover {
+  transform: scale(1.1) rotate(-6deg);
+}
+
+.brand h2 {
+  color: #38bdf8;
+}
+
+.brand p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+/* Social */
+.social img {
+  width: 28px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social img:hover {
+  transform: translateY(-6px) scale(1.1);
+}
+
+/* Links */
+.links a  {
+  display: block;
+  text-decoration: none;
+  color: #e5e7eb;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #22c55e;
+  transform: translateX(6px);
+}
+
+/* Newsletter */
+.newsletter input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.newsletter button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  transform: scale(1.1);
+}
+
+/* Bottom */
+.copy {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid #1e293b;
+  padding-top: 15px;
+  color: #94a3b8;
+}
+
+/* Scroll Top */
+#topBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+
+#topBtn:hover {
+  transform: scale(1.2);
+}

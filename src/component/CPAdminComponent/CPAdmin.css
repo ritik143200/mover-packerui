@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+#CPbody {
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #aa94c1, #365384);
+}
+
+/* Glass Effect Card */
+.form-box {
+    width: 600px;
+    padding: 50px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Input Hover + Focus */
+.input-group input:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

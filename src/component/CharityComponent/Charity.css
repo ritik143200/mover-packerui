@@ -1,0 +1,73 @@
+.AI{
+
+    margin-top: 10px 10px 10px 10px;
+}
+/* Container styling */
+.charity-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.charity-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input section */
+.charity-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label */
+.charity-input label {
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+/* User email display */
+.charity-input h1 {
+  font-size: 16px;
+  color: #444;
+  margin: 0;
+  text-align: left;
+}
+
+/* Input field */
+.charity-input input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.charity-input input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button */
+.charity-input button {
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.charity-input button:hover {
+  background: #45a049;
+}

@@ -1,0 +1,386 @@
+.content {
+  padding: 30px;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  color: #2a2a72;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1.2px;
+}
+
+/* Grid container */
+.subcategory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card */
+.subcategory-card {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  padding: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  overflow: hidden;
+}
+
+/* Hover effect with subtle scale and shadow */
+.subcategory-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 45px rgba(42, 42, 114, 0.4);
+}
+
+/* Image */
+.subcategory-card img {
+  width: 100%;
+  height: 220px;       /* Badi image height */
+  object-fit: cover;   /* Image crop but cover perfectly */
+  display: block;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom image on hover */
+.subcategory-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Subcategory Name */
+.subcat-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a2a72;
+  padding: 15px 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Change text color on hover */
+.subcategory-card:hover .subcat-name {
+  color: #00c6ff;
+}
+
+
+
+
+
+
+
+
+
+
+/* #categorymain
+{
+ min-height:150px;
+ width:600px;
+}
+
+.categorypart
+{
+ height:150px;
+ width:200px;
+ float:left;
+} */
+
+
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+} */
+
+/* HEADER */
+/* .header {
+    width: 100%;
+    height: 90px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(255, 245, 245);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+     transition: 0.3s;
+}
+
+
+.header:hover {
+    background: rgba(244, 250, 255, 0.952);
+    transform: translateX(6px);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4a00e0;
+    font-weight: bold;
+} */
+
+/* SIDEBAR (NOW UNDER HEADER) */
+/* .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 220px;
+    height: calc(100vh - 80px); */
+    /* header हटाकर बाकी space */
+    /* background: aliceblue;
+    position: fixed;
+    top: 80px; */
+    /* header के नीचे शुरू */
+    /* left: 0;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+
+} */
+
+
+
+/* .sidebar  a   {
+    display: block;
+    padding: 14px 25px;
+    margin: 10px 10px;
+    background: #374151;
+    color: rgb(164, 199, 204);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 17px;
+    transition: 0.3s;
+
+} */
+
+/* .sidebar a:hover {
+    background: azure;
+    transform: translateX(6px);
+} */
+
+/* CONTENT */
+/* .content {
+    margin-left: 240px;
+    height: 100%;
+    padding: 120px 40px;
+    header की height + padding */
+    /* font-size: 20px;
+} */
+
+
+
+
+
+
+
+
+
+.hero {
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 2rem;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+    animation: fadeInUp 1s ease 0.3s both;
+    position: relative;
+    min-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-option {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation: textCycle 12s ease-in-out infinite;
+    white-space: normal;
+    padding: 0 20px;
+}
+
+.text-option:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.text-option:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.text-option:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes textCycle {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    8%,
+    25% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    33% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+}
+
+.cta-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease 0.6s both;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+.mycard {
+    width: 90%;
+    max-width: 1300px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 18px 20px;
+}
+
+.card-content h3 {
+    color: #0066a2;
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+}
+
+.price {
+    float: right;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+}
+
+.card-content p {
+    font-size: 15px;
+    color: #555;
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.rating {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e63946;
+    font-size: 18px;
+}
+
+.reviews {
+    color: #d90429;
+    font-size: 14px;
+}
+
+
+
+
+
+/* register */

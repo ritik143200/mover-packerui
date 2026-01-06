@@ -1,0 +1,131 @@
+
+
+#Registerbody {
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #1a73e8, #6a11cb, #ff6a00); */
+    background: linear-gradient(135deg, #f7be97, #c8d4db, #71aaf8);
+    background-size: 200% 200%;
+    animation: bgMove 10s ease infinite;
+}
+
+/* Background Movement Animation */
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.Registercontainer {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.register-box {
+    width: 100vh;
+    background: rgba(210, 223, 228, 0.92);
+    padding: 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    color: rgb(23, 21, 21);
+    animation: fadeUp 0.7s ease;
+}
+
+/* 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+.register-box h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 22px;
+    color: #3e3b3b;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 70%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: black;
+    color: black;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    background: black;
+    box-shadow: black;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffda33;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #093498;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

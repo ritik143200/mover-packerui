@@ -1,0 +1,69 @@
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+
+function Auth() {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+
+        var path = window.location.pathname;
+
+        if (path == "/admin" || path == "/manageusers") {
+
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "admin")
+                navigate("/logout");
+        }
+        if (path == "/admin" || path == "/subcategory") {
+
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "admin")
+                navigate("/logout");
+        }
+        
+        if (path == "/admin" || path == "/category") {
+
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "admin")
+                navigate("/logout");
+        }
+        if (path == "/admin" || path == "/cpadmin") {
+
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "admin")
+                navigate("/logout");
+        }
+        
+        if (path == "/admin" || path == "/epadmin") {
+
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "admin")
+                navigate("/logout");
+        }
+        if (path == "/admin" || path == "/Login") {
+
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "admin")
+                navigate("/logout");
+        }
+        
+        if (path == "/admin" || path == "/logout") {
+
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "admin")
+                navigate("/logout");
+        
+        }
+        else if (path == "/user") {
+            if (!localStorage.getItem("token") || localStorage.getItem("role") != "user")
+                navigate("/logout");
+        }
+        else {
+            if (localStorage.getItem("role") == "admin")
+                navigate("/admin");
+            else if (localStorage.getItem("role") == "user")
+                navigate("/user");
+            else
+                navigate(path);
+        }
+    }, []);
+
+    return (
+        <></>
+    )
+}
+
+export default Auth;
